@@ -1,0 +1,44 @@
+plugins {
+    id 'application'
+    // for avro
+    id 'com.commercehub.gradle.plugin.avro' version '0.9.1'
+}
+
+repositories {
+
+    mavenCentral()
+
+    // for avro
+    maven { url 'https://packages.confluent.io/maven' }
+}
+
+avro {
+    // default is true
+    createSetters = true
+
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-clients:2.2.1'
+    testImplementation 'junit:junit:4.12'
+
+    // for avro
+    implementation 'io.confluent:kafka-avro-serializer:5.3.0'
+    implementation 'org.apache.avro:avro:1.9.0'
+}
+
+
+
+application {
+    mainClassName = 'com.producer.ProducerMain'
+}
+
+task(runProducer, dependsOn: 'classes', type: JavaExec) {
+   main = 'com.producer.ProducerMain'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+task(runConsumer, dependsOn: 'classes', type: JavaExec) {
+   main = 'com.consumer.ConsumerMain'
+   classpath = sourceSets.main.runtimeClasspath
+}

@@ -1,0 +1,8 @@
+{"namespace": "com.avro",
+ "type": "record",
+ "name": "Profile",
+ "fields": [
+     {"name": "jobTitle", "type": "string"},
+     {"name": "description", "type": "string"}
+ ]
+}

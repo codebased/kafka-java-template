@@ -1,0 +1,6 @@
+{
+    "namespace": "com.avro",
+    "name": "Gender",
+    "type": "enum",
+    "symbols" : ["Male", "Female", "Others"]
+}

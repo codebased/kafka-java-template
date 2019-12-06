@@ -1,0 +1,12 @@
+{
+"namespace": "com.avro",
+ "type": "record",
+ "name": "Employee",
+ "fields": [
+     {"name": "id", "type": "string"},
+     {"name": "name", "type": "string"},
+     {"name": "salary", "type": "double"},
+     {"name": "gender", "type": "Gender"},
+     {"name": "profile", "type": "Profile"}
+ ]
+}
