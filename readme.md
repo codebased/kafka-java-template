@@ -1,4 +1,19 @@
-#Introduction 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Introduction](#introduction)
+  - [Basic Setup](#basic-setup)
+    - [Kafka Topic](#kafka-topic)
+    - [Topic Record Format](#topic-record-format)
+    - [Schema Registry](#schema-registry)
+    - [Bootstrap Server](#bootstrap-server)
+  - [Producer](#producer)
+  - [Consumer](#consumer)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# Introduction 
 
 You can use this template to create a producer as well as consumer for Kafka. 
 
@@ -124,6 +139,6 @@ If everything is OK with your project, you should be able to successfully build 
 You can now run this command from the terminal: 
 
  `./gradlew runConsumer`
- 
+
 
  
