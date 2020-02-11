@@ -141,4 +141,6 @@ You can now run this command from the terminal:
  `./gradlew runConsumer`
 
 
+ ## References 
  
+[Kafka Notes](https://github.com/codebased/learning/blob/master/ReadMe/kafka/kafka.md)
