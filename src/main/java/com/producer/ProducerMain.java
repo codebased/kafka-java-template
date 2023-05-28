@@ -41,7 +41,7 @@ public class ProducerMain {
             // create an official kafka record with key and value. Also tell other metadata
             // such as kafka topic, partition (optional) you want to
             // send this record too.
-            ProducerRecord record = new ProducerRecord<>(KafkaConfig.KAFKA_TOPIC, employee.toString(), employee);
+            var record = new ProducerRecord<>(KafkaConfig.KAFKA_TOPIC, employee.toString(), employee);
 
             // 4. Send Kafka Message
             // officially send this record using kafka producer connection.
